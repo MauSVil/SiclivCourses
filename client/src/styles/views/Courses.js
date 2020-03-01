@@ -30,7 +30,7 @@ export default ({ screenSize }) => ({
       `coursesGrid.gridTemplateColumns_${screenSize}`,
       "1fr 1fr 1fr"
     ),
-    padding: 70,
+    padding: "70px 0",
     boxSizing: "border-box",
     gridRowGap: 40,
     gridColumnGap: 50

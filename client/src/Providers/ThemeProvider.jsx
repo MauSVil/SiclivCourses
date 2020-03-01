@@ -9,8 +9,8 @@ const StyleProvider = ({ children }) => {
     const { clientWidth } = documentElement;
     if (clientWidth > 320 && clientWidth < 480) setScreenSize("small");
     if (clientWidth >= 480 && clientWidth < 1024) setScreenSize("medium");
-    if (clientWidth >= 1024 && clientWidth < 1600) setScreenSize("large");
-    if (clientWidth >= 1600 && clientWidth < 2000) setScreenSize("xlarge");
+    if (clientWidth >= 1024 && clientWidth < 1700) setScreenSize("large");
+    if (clientWidth >= 1700 && clientWidth < 2000) setScreenSize("xlarge");
   };
 
   useEffect(() => {
