@@ -1,30 +1,26 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { Home } from "./views";
+import { Home, Courses } from "./views";
 import { themed } from "./HOC/themed";
 
 const AppRoutes = props => {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <NavBar />
       <Router>
+        <NavBar />
         <Switch>
-          <Route path="/courses">
-            <div>Hola</div>
-          </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
+          <Route path="/courses">
+            <Courses />
+          </Route>
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 };
