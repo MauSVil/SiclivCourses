@@ -8,6 +8,7 @@ const vars = {
 
 export default ({ screenSize }) => ({
   root: {
+    background: "#f1f1f1",
     padding: _.get(vars, `root.padding_${screenSize}`, "15px 50px")
   }
 });

@@ -20,8 +20,7 @@ export default ({ screenSize }) => ({
     minHeight: "100vh"
   },
   frameworks: {
-    height: 300,
-    background: "green"
+    height: 300
   },
   coursesGrid: {
     backgroundColor: "#e6e6e61c",
@@ -42,13 +41,18 @@ export default ({ screenSize }) => ({
   },
   container: {
     display: "flex",
-    overflow: "hidden"
+    overflow: "hidden",
+    background: "linear-gradient(145deg, #ffffff, #e6e6e6)",
+    boxShadow: "5px 5px 16px #e3e3e3, -5px -5px 16px #ffffff",
+    boxSizing: "border-box",
+    alignItems: "center",
+    borderRadius: 20,
+    height: 250
   },
   wrapper: {
     display: "flex"
   },
   slide: {
-    background: "lightgray",
     height: 400,
     display: "flex",
     alignItems: "center",

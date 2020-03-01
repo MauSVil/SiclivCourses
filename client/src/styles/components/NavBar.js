@@ -4,8 +4,7 @@ export default {
     height: 150,
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between",
-    background: "lightyellow"
+    justifyContent: "space-between"
   },
   linksContainer: {
     width: "30%",
